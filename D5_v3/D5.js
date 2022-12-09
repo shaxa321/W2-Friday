@@ -9,19 +9,37 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
-const pets = ['dog', 'cat', 'hamster', 'redfish']
+console.log("EX1");
+const pets = ['dog', 'cat', 'hamster', 'redfish'];
+for(let i=0;i<pets.length;i++){
+  console.log("elemento numero:",i, ":    ",pets[i]);
+}
+
 
 /* ESERCIZIO 2
-    Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
-*/
+    Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets"*/
 
+  console.log("EX2");
+  pets.sort();
+  console.log(pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
-
+  console.log("EX3");
+  pets.reverse();
+  console.log(pets);
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+  console.log("EX4");
+  let firstElement; //se utilizzo const diventa rosso?!
+  firstElement=pets.splice(0,1);
+  console.log(firstElement);
+  console.log(typeof(firstElement));
+  pets.push(firstElement);
+  console.log(Array.isArray(firstElement));
+  console.log(pets);
+
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
