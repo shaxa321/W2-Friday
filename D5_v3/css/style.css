@@ -117,7 +117,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .galleryimage{
 
-    
+
+    -webkit-box-shadow: 3px 3px 15px #ccc;
+
     width: 23%;
     height: 220px;
     border-radius: 7%;
