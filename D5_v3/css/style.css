@@ -58,6 +58,8 @@ a:link {
 
 footer a:link{
     text-decoration:underline;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .logoimageheader{
@@ -72,6 +74,7 @@ footer a:link{
 p{
     font-family:'Helvetica';
     font-weight: 600;
+    margin-top:0;
 }
 
 
@@ -102,7 +105,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .thirdsection{
     width: 100%;
-    background-color: white
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 8px ;
 
 }
 .fourthsection{
