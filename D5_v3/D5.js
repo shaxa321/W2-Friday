@@ -48,6 +48,7 @@ for(let i=0;i<pets.length;i++){
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
+console.log("EX 5"); 
 const cars = [
   {
     brand: 'Ford',
@@ -70,8 +71,9 @@ const cars = [
 ]
 
 for(let i=0;i<cars.length;i++){
-  cars[i].push
+  cars[i].licensePlate= Math.floor(Math.random() * 5);
 }
+console.log(cars);
 
 
 
@@ -82,11 +84,24 @@ for(let i=0;i<cars.length;i++){
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 console.log("EX 6");
+const car={
+  brand: "Volvo",
+  model: "XC90",
+  color: "metal grey",
+  trims: ["life"],
+  licensePlate: 4,
+}
+cars.push(car);
+for(i=0;i<cars.length;i++){
+  cars[i].trims.pop();
+}
+console.log(cars);
+
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-//QUESTO ALGORITMO FUNZIONA SOLO PRESUPPONENDO CHE OGNI AUTO ABBIA LA PROPRIETA TRIMS COMMENTO BY SHAHRUZ
+
 console.log("EX 7"); 
 
 const justTrims = [];
